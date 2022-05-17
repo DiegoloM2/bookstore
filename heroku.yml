@@ -1,0 +1,13 @@
+#heroku.yml
+setup: #specify which addons are needed
+    addons:
+    - plan: heroku-postgresql
+build:
+    docker:
+        web: Dockerfile
+release: #used to run tasks before each new release is deployed
+    image: web
+    command:
+    - python manage.py collectstatic --noinput
+run: #Specify processes that run the application
+    web: gunicorn bookstore.wsgi
