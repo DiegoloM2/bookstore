@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+{% block title %}Book Store entry {% endblock %}
+{% block content %}
+    
+
+    {% if user.is_authenticated %}
+        <h1>Welcome {{user}}!</h1>
+        <p><a href="{% url 'account_logout' %}">logout</a></p>
+    {% else %}
+        <h1>Welcome!</h1>
+        <p>You are not logged in, <a href = "{% url 'account_login' %}">login</a> | <a href="{% url 'account_signup' %}">register</a></p>
+    {% endif %}
+
+
+ 
+
+{% endblock %}
