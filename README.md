@@ -6,6 +6,7 @@ This is a simple bookstore project which implements:
 - A custom user model with its respective register, login, logout and email recuperation passwords
 - Basic Bootstrap Styling
 - A Postgresql database
-- etc.
+- A basic permission System
+- Etc.
 
 ## You can visit it and play around with it at: https://secure-shelf-05035.herokuapp.com/
