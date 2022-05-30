@@ -7,3 +7,5 @@ This is a simple bookstore project which implements:
 - Basic Bootstrap Styling
 - A Postgresql database
 - etc.
+
+## You can visit it and play around with it at: https://secure-shelf-05035.herokuapp.com/
