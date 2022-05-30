@@ -123,7 +123,7 @@ DATABASES = {
         'PASSWORD': 'postgres',
         'HOST': 'db', #name of docker container
         'PORT': 5432 #postgresql default
-    }
+    }   
 }
 
 
